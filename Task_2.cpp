@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     long long* ptr = &tmp;
     printPorinter(ptr);
 
-    char tmp2 = '0123456789abcdef';
+    char tmp2[] = '0123456789abcdef';
     char* ptr2 = &tmp2;
     printPorinter(ptr2);
 
