@@ -6,7 +6,7 @@ void printPorinter(void *p){
     double *p3 = reinterpret_cast<double *>(p);
     printf("*p1 = %c, *(p1 + 1) = %c\n", *p1, *(p1 + 1));
     printf("*p2 = %x, *(p2 + 1) = %x\n", *p2, *(p2 + 1));
-    printf("*p3 = %f, *(p3 + 1) = %f\n", *p3, *(p3 + 1));
+    printf("*p3 = %lf, *(p3 + 1) = %lf\n", *p3, *(p3 + 4));
 
 }
 int main(int argc, char *argv[])

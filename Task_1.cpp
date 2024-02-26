@@ -19,5 +19,6 @@ int main(int argc, char *argv[])
 {
     int example = 2;
     int* ptr =&example;
-    viewPointer(ptr);
+    void* res = ptr;
+    viewPointer(res);
 }
