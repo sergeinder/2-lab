@@ -9,7 +9,7 @@ void viewPointer(void * p){
     printf("p2 = %p\n", p2);
     printf("p3 = %p\n", p3);
     printf("All adresses are equal\n\n");
-
+    
     printf("p1 = %p, p1+1 = %p, size of type: %u\n", p1, p1 + 1, sizeof(*p1));
     printf("p2 = %p, p2+1 = %p, size of type: %u\n", p2, p2 + 1, sizeof(*p2));
     printf("p3 = %p, p3+1 = %p, size of type: %u\n", p3, p3 + 1, sizeof(*p3));
