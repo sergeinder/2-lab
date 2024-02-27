@@ -6,7 +6,7 @@ void print16(void *p){
     printf("c)%04hu ",*(reinterpret_cast<unsigned short *>(p)));
     printf("d)%04hx ",*(reinterpret_cast<short *>(p)));
     //printf("e)%016hb ", *(reinterpret_cast<short *>(p)));
-    printf("f)%04hu ",*(reinterpret_cast<short *>(p)));
+    printf("f)%04hi ",*(reinterpret_cast<short *>(p)));
     printf("\n");
 }
 
