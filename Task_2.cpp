@@ -12,14 +12,12 @@ void printPorinter(void *p){
 int main(int argc, char *argv[])
 {
     long long tmp = 0x1122334455667788;
-    long long* ptr = &tmp;
-    void* res = ptr;
-    printPorinter(res);
+    void* ptr = &tmp;
+    printPorinter(ptr);
 
     char tmp2[] = "0123456789abcdef";
-    char* ptr2 = &tmp2[0];
-    void* res2 = ptr2;
-    printPorinter(res2);
+    void* ptr2 = &tmp2[0];
+    printPorinter(ptr2);
 
     return 0;
 }

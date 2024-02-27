@@ -15,19 +15,16 @@ int main(int argc, char *argv[])
     int y = -5;
     int z = 0xFF007100;
     
-    int* ptr_x = &x;
-    void* res1 = ptr_x;
-    printDump(res1, sizeof(x));
+    void* ptr_x = &x;
+    printDump(ptr_x, sizeof(x));
 
     int mas[] = {x,y,z};
-    int* ptr_mas = &mas[0];
-    void* res2 = ptr_mas;
-    printDump(res2, sizeof(mas));
+    void* ptr_mas = &mas[0];
+    printDump(res2, sizeof(ptr_mas));
 
     double d_y = -5;
-    double* ptr_y = &d_y;
-    void* res3 = ptr_y;
-    printDump(res3, sizeof(d_y));
+    void* ptr_y = &d_y;
+    printDump(res3, sizeof(ptr_y));
 
     return 0;
 }
