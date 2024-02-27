@@ -20,11 +20,11 @@ int main(int argc, char *argv[])
 
     int mas[] = {x,y,z};
     void* ptr_mas = &mas[0];
-    printDump(res2, sizeof(ptr_mas));
+    printDump(ptr_mas, sizeof(mas));
 
     double d_y = -5;
     void* ptr_y = &d_y;
-    printDump(res3, sizeof(ptr_y));
+    printDump(ptr_y, sizeof(d_y));
 
     return 0;
 }
