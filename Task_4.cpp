@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 void print16(void *p){
-    printf("a)%04x ",*(reinterpret_cast<unsigned short *>(p)));
-    printf("b)%016b ", *(reinterpret_cast<unsigned short *>(p)));
-    printf("c)%04u ",*(reinterpret_cast<unsigned short *>(p)));
-    printf("d)%04x ",*(reinterpret_cast<short *>(p)));
-    printf("e)%016b ", *(reinterpret_cast<short *>(p)));
-    printf("f)%04u ",*(reinterpret_cast<short *>(p)));
+    printf("a)%04hx ",*(reinterpret_cast<unsigned short *>(p)));
+    //printf("b)%016hb ", *(reinterpret_cast<unsigned short *>(p)));
+    printf("c)%04hu ",*(reinterpret_cast<unsigned short *>(p)));
+    printf("d)%04hx ",*(reinterpret_cast<short *>(p)));
+    //printf("e)%016hb ", *(reinterpret_cast<short *>(p)));
+    printf("f)%04hu ",*(reinterpret_cast<short *>(p)));
     printf("\n");
 }
 
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     unsigned short min_unsigned_short = 0;
     unsigned short max_unsigned_short = 65535;
     signed short min_short = -32768;
-    signed short max_short = 32768;
+    signed short max_short = 32767;
     short x = 5;
     short y = -5;
     
