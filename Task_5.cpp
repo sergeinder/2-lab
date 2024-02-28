@@ -3,10 +3,10 @@
 void print32(void *p){
     printf("a)%08x ",*(reinterpret_cast<unsigned int*>(p)));
     //printf("b)%032b ", *(reinterpret_cast<unsigned int *>(p)));
-    printf("c)%08u ",*(reinterpret_cast<unsigned int*>(p)));
+    printf("c)%010u ",*(reinterpret_cast<unsigned int*>(p)));
     printf("d)%08x ",*(reinterpret_cast<int*>(p)));
     //printf("e)%032b ", *(reinterpret_cast<int *>(p)));
-    printf("f)%08i ",*(reinterpret_cast<int*>(p)));
+    printf("f)%011i ",*(reinterpret_cast<int*>(p)));
     printf("g)%5.2f ",*(reinterpret_cast<float*>(p)));
     printf("e)%5.2e ",*(reinterpret_cast<float*>(p)));
 

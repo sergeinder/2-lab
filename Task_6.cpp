@@ -4,12 +4,12 @@
 void print64(void *p){
     printf("a)%016llx ",*(reinterpret_cast<unsigned long long*>(p)));
     //printf("b)%064b ", *(reinterpret_cast<unsigned long long *>(p)));
-    printf("c)%016llu ",*(reinterpret_cast<unsigned long long*>(p)));
+    printf("c)%019llu ",*(reinterpret_cast<unsigned long long*>(p)));
     printf("d)%016llx ",*(reinterpret_cast<long long*>(p)));
     //printf("e)%064b ", *(reinterpret_cast<long long *>(p)));
-    printf("f)%016lli ",*(reinterpret_cast<long long*>(p)));
-    printf("g)%5.2f ",*(reinterpret_cast<double*>(p)));
-    printf("e)%5.2e ",*(reinterpret_cast<double*>(p)));
+    printf("f)%020lli ",*(reinterpret_cast<long long*>(p)));
+    printf("g)%5.2lf ",*(reinterpret_cast<double*>(p)));
+    printf("e)%5.2le ",*(reinterpret_cast<double*>(p)));
 
     printf("\n");
 }

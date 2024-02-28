@@ -3,10 +3,10 @@
 void print16(void *p){
     printf("a)%04hx ",*(reinterpret_cast<unsigned short *>(p)));
     //printf("b)%016hb ", *(reinterpret_cast<unsigned short *>(p)));
-    printf("c)%04hu ",*(reinterpret_cast<unsigned short *>(p)));
+    printf("c)%05hu ",*(reinterpret_cast<unsigned short *>(p)));
     printf("d)%04hx ",*(reinterpret_cast<short *>(p)));
     //printf("e)%016hb ", *(reinterpret_cast<short *>(p)));
-    printf("f)%04hi ",*(reinterpret_cast<short *>(p)));
+    printf("f)%06hi ",*(reinterpret_cast<short *>(p)));
     printf("\n");
 }
 
